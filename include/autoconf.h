@@ -51,7 +51,7 @@
 #ifdef CONFIG_IOCTL_CFG80211
 	#define RTW_USE_CFG80211_STA_EVENT /* Indecate new sta asoc through cfg80211_new_sta */
 	//#define CONFIG_CFG80211_FORCE_COMPATIBLE_2_6_37_UNDER
-	//#define CONFIG_DEBUG_CFG80211 
+	#define CONFIG_DEBUG_CFG80211 
 	//#define CONFIG_DRV_ISSUE_PROV_REQ // IOT FOR S2
 	#define CONFIG_SET_SCAN_DENY_TIMER
 #endif
@@ -378,10 +378,10 @@
 /*
  * Debug Related Config
  */
-#define DBG	0  /* 0=disable, 1=enable */
+#define DBG	1  /* 0=disable, 1=enable */
 
-//#define CONFIG_DEBUG /* DBG_871X, etc... */
-//#define CONFIG_DEBUG_RTL871X /* RT_TRACE, RT_PRINT_DATA, _func_enter_, _func_exit_ */
+#define CONFIG_DEBUG /* DBG_871X, etc... */
+#define CONFIG_DEBUG_RTL871X /* RT_TRACE, RT_PRINT_DATA, _func_enter_, _func_exit_ */
 
 //#define CONFIG_PROC_DEBUG
 
