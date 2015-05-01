@@ -20,10 +20,11 @@
 #define _RTW_MLME_C_
 
 #include <drv_types.h>
-
+#include <osdep_service.h>
 
 extern void indicate_wx_scan_complete_event(_adapter *padapter);
 extern u8 rtw_do_join(_adapter * padapter);
+extern void	_rtw_mfree(u8 *pbuf, u32 sz);
 
 #ifdef CONFIG_DISABLE_MCS13TO15
 extern unsigned char	MCS_rate_2R_MCS13TO15_OFF[16];

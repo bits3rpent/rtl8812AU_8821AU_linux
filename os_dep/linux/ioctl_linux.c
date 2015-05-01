@@ -20,11 +20,17 @@
 #define _IOCTL_LINUX_C_
 
 #include <drv_types.h>
-
+#include <osdep_service.h>
 //#ifdef CONFIG_MP_INCLUDED
 #include <rtw_mp_ioctl.h>
 #include "../../hal/OUTSRC/odm_precomp.h"
 //#endif
+extern void     _rtw_mfree(u8 *pbuf, u32 sz);
+extern u8*      _rtw_vmalloc(u32 sz);
+extern u8*      _rtw_zvmalloc(u32 sz);
+extern void     _rtw_vmfree(u8 *pbuf, u32 sz);
+extern u8*      _rtw_zmalloc(u32 sz);
+extern u8*      _rtw_malloc(u32 sz);
 
 #if defined(CONFIG_RTL8723A)
 #include "rtl8723a_hal.h"

@@ -383,31 +383,31 @@
 #define CONFIG_DEBUG /* DBG_871X, etc... */
 #define CONFIG_DEBUG_RTL871X /* RT_TRACE, RT_PRINT_DATA, _func_enter_, _func_exit_ */
 
-//#define CONFIG_PROC_DEBUG
+#define CONFIG_PROC_DEBUG
 
-//#define DBG_CONFIG_ERROR_DETECT
-//#define DBG_CONFIG_ERROR_DETECT_INT
-//#define DBG_CONFIG_ERROR_RESET
+#define DBG_CONFIG_ERROR_DETECT
+#define DBG_CONFIG_ERROR_DETECT_INT
+#define DBG_CONFIG_ERROR_RESET
 
-//#define DBG_IO
-//#define DBG_DELAY_OS
-//#define DBG_MEM_ALLOC
-//#define DBG_IOCTL
+#define DBG_IO
+#define DBG_DELAY_OS
+#define DBG_MEM_ALLOC
+#define DBG_IOCTL
 
-//#define DBG_TX
-//#define DBG_XMIT_BUF
-//#define DBG_XMIT_BUF_EXT
-//#define DBG_TX_DROP_FRAME
+#define DBG_TX
+#define DBG_XMIT_BUF
+#define DBG_XMIT_BUF_EXT
+#define DBG_TX_DROP_FRAME
 
-//#define DBG_RX_DROP_FRAME
-//#define DBG_RX_SEQ
-//#define DBG_RX_SIGNAL_DISPLAY_PROCESSING
-//#define DBG_RX_SIGNAL_DISPLAY_SSID_MONITORED "jeff-ap"
+#define DBG_RX_DROP_FRAME
+#define DBG_RX_SEQ
+#define DBG_RX_SIGNAL_DISPLAY_PROCESSING
+#define DBG_RX_SIGNAL_DISPLAY_SSID_MONITORED "jeff-ap"
 
 
 
-//#define DBG_SHOW_MCUFWDL_BEFORE_51_ENABLE
-//#define DBG_ROAMING_TEST
+#define DBG_SHOW_MCUFWDL_BEFORE_51_ENABLE
+#define DBG_ROAMING_TEST
 
 //#define DBG_HAL_INIT_PROFILING
 
